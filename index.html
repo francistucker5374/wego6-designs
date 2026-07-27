@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>WEGO6 — pick a design direction</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1115'/%3E%3Ccircle cx='11' cy='16' r='4' fill='%23e8b23a'/%3E%3Ccircle cx='21' cy='16' r='4' fill='%2320a17a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f1115;--panel:#171a20;--line:#2a2f38;--fg:#e9edf2;--fg2:#98a2ae;--fg3:#69737f;
+      --gold:#c98500;--good:#0ca30c;--warn:#fab219;--bad:#d03b3b;
+      --disp:'Big Shoulders Display',system-ui,sans-serif;--body:'IBM Plex Sans',system-ui,sans-serif;--mono:'IBM Plex Mono',monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--fg);font-family:var(--body);line-height:1.6}
+.wrap{max-width:1500px;margin:0 auto;padding:0 clamp(16px,3vw,32px)}
+header{padding:clamp(28px,5vw,52px) 0 26px;border-bottom:1px solid var(--line)}
+.kick{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--fg3)}
+h1{font-family:var(--disp);font-weight:800;font-size:clamp(40px,8vw,86px);line-height:.9;margin:.15em 0 .2em;text-transform:uppercase}
+.lede{font-size:clamp(15px,2vw,19px);color:var(--fg2);max-width:70ch;margin:0 0 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:22px;padding:34px 0 60px}
+.card{background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column}
+.card.pick{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.head{padding:18px 20px 14px;border-bottom:1px solid var(--line)}
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);background:var(--fg2);padding:4px 8px;display:inline-block;margin-bottom:10px}
+.card.pick .tag{background:var(--gold)}
+.card h2{font-family:var(--disp);font-weight:700;font-size:clamp(24px,3vw,34px);margin:0 0 4px;text-transform:uppercase;line-height:1}
+.card .sub{font-size:14px;color:var(--fg2);margin:0}
+.frame{position:relative;background:#fff;height:520px;overflow:hidden;border-bottom:1px solid var(--line)}
+.frame iframe{position:absolute;top:0;left:0;width:1440px;height:1730px;border:0;transform:scale(.333);transform-origin:0 0}
+.body{padding:16px 20px 20px;font-size:14px;color:var(--fg2);flex:1}
+.body b{color:var(--fg);font-weight:600}
+.body ul{margin:10px 0 0;padding-left:17px}
+.body li{margin-bottom:6px}
+.flags{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-size:13px}
+.flag{display:flex;gap:8px;margin-bottom:6px;align-items:flex-start}
+.dot{flex:0 0 auto;width:7px;height:7px;border-radius:50%;margin-top:7px}
+.d-good{background:var(--good)}.d-warn{background:var(--warn)}.d-bad{background:var(--bad)}
+.acts{display:flex;gap:10px;padding:0 20px 20px}
+.acts a{flex:1;text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+        padding:11px 10px;border:1px solid var(--line);color:var(--fg);text-decoration:none}
+.acts a:hover{border-color:var(--gold);color:var(--gold)}
+.note{background:var(--panel);border-left:3px solid var(--gold);padding:16px 18px;margin:0 0 30px;font-size:15px;color:var(--fg2);max-width:80ch}
+.note b{color:#fff}
+footer{padding:26px 0 60px;font-family:var(--mono);font-size:11.5px;color:var(--fg3);border-top:1px solid var(--line)}
+@media (max-width:900px){.frame{height:380px}.frame iframe{transform:scale(.26)}}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <div class="kick">buy-wego6.com · design direction · 27 July 2026</div>
+  <h1>Pick one</h1>
+  <p class="lede">Three directions, same German content, same conversion structure. All three are QA-clean: zero console errors, zero horizontal overflow at 375/768/1440, no remote images, every CTA already wired to <span style="font-family:var(--mono)">/de/go/</span>. Whichever you pick gets fanned out to all 50 pages.</p>
+</div></header>
+
+<div class="wrap">
+  <div class="note">
+    <b>One change I'm making to whichever you choose.</b> All three came back using <b>"Test" / "Testbericht" / "Testurteil"</b>. In Germany that wording is only allowed if the page documents genuine first-hand testing (UWG §5b(3)) — and German results for this exact product are already being patrolled by consumer bodies. It becomes <b>"Einschätzung"</b> / <b>"Redaktionelle Bewertung"</b>, which reads the same to a buyer and carries none of the exposure.
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="head">
+        <span class="tag">Direction A</span>
+        <h2>Editorial Verdict</h2>
+        <p class="sub">Consumer-testing magazine. Prüfbericht layout, scored sub-criteria, olive &amp; burnt orange.</p>
+      </div>
+      <div class="frame"><iframe src="a/index.html" title="Direction A" loading="lazy" scrolling="no"></iframe></div>
+      <div class="body">
+        <b>Strongest authority signal.</b> Reads like an independent testing institute — masthead, issue number, scored breakdown for Rezeptur / Anwendung / Preis-Leistung.
+        <div class="flags">
+          <div class="flag"><span class="dot d-good"></span><span>Highest perceived credibility of the three</span></div>
+          <div class="flag"><span class="dot d-bad"></span><span><b>Biggest legal exposure.</b> "Prüfbericht Nr. 06/2026", "Redaktionelle Produktprüfung" and the three sub-scores all assert a formal test we haven't run — and the look sits close to Stiftung Warentest's trade dress. Stripping those claims removes most of what makes it distinctive.</span></div>
+        </div>
+      </div>
+      <div class="acts"><a href="a/index.html" target="_blank">Open full page</a><a href="a/mobile_full.png" target="_blank">Mobile</a></div>
+    </div>
+
+    <div class="card pick">
+      <div class="head">
+        <span class="tag">Direction B · my pick</span>
+        <h2>Clinical Apothecary</h2>
+        <p class="sub">European pharmacy language. Blister-strip hero drawn in SVG, Apotheke green, mono numerals.</p>
+      </div>
+      <div class="frame"><iframe src="b/index.html" title="Direction B" loading="lazy" scrolling="no"></iframe></div>
+      <div class="body">
+        <b>The most distinctive and the most defensible.</b> A six-pocket blister strip authored entirely in SVG — foil gradients, embossed lot text, perforation — carries the "6" in the name. The verdict is a calibrated measurement scale with a needle rather than stars, and pricing is framed as pharmacy pack sizes N1/N2/N3.
+        <div class="flags">
+          <div class="flag"><span class="dot d-good"></span><span>Trust language that fits a supplement without claiming to be a lab</span></div>
+          <div class="flag"><span class="dot d-good"></span><span>Every number set in mono — dosage, 387 mg, prices all read as specification</span></div>
+          <div class="flag"><span class="dot d-good"></span><span>The verdict device relabels cleanly to "Einschätzung" with zero design loss</span></div>
+          <div class="flag"><span class="dot d-warn"></span><span>Drops the <b>®</b> after WEGO6 — we haven't verified a registered mark</span></div>
+        </div>
+      </div>
+      <div class="acts"><a href="b/index.html" target="_blank">Open full page</a><a href="b/mobile_full.png" target="_blank">Mobile</a></div>
+    </div>
+
+    <div class="card">
+      <div class="head">
+        <span class="tag">Direction C</span>
+        <h2>Warm Momentum</h2>
+        <p class="sub">Premium DTC wellness. Sunrise gradient system, ingredient-coloured cards, amber CTAs.</p>
+      </div>
+      <div class="frame"><iframe src="c/index.html" title="Direction C" loading="lazy" scrolling="no"></iframe></div>
+      <div class="body">
+        <b>Most commercial.</b> Warm sunrise palette pulled from the formula itself — sea buckthorn, amber, cayenne — with each of the seven ingredients carrying its own botanical colour. A "metabolism current" gradient runs behind the hero and through the three benefit axes.
+        <div class="flags">
+          <div class="flag"><span class="dot d-good"></span><span>Likely the best raw conversion of the three — feels expensive, not shouty</span></div>
+          <div class="flag"><span class="dot d-good"></span><span>Warm palette differentiates hard from the clinical white competitors already ranking</span></div>
+          <div class="flag"><span class="dot d-warn"></span><span>Reads more like a brand's own site than an independent review — slightly weaker fit for the "seriös / is it legit" queries that are our biggest traffic cluster</span></div>
+        </div>
+      </div>
+      <div class="acts"><a href="c/index.html" target="_blank">Open full page</a><a href="c/mobile_full.png" target="_blank">Mobile</a></div>
+    </div>
+
+  </div>
+</div>
+
+<footer><div class="wrap">
+  Previews are the real pages, scaled. Open any of them full-size to judge properly — the scaled frames flatten the typography.
+</div></footer>
+
+</body>
+</html>
