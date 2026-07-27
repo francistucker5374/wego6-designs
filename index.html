@@ -28,8 +28,12 @@ h1{font-family:var(--disp);font-weight:800;font-size:clamp(40px,8vw,86px);line-h
 .card.pick .tag{background:var(--gold)}
 .card h2{font-family:var(--disp);font-weight:700;font-size:clamp(24px,3vw,34px);margin:0 0 4px;text-transform:uppercase;line-height:1}
 .card .sub{font-size:14px;color:var(--fg2);margin:0}
-.frame{position:relative;background:#fff;height:520px;overflow:hidden;border-bottom:1px solid var(--line)}
-.frame iframe{position:absolute;top:0;left:0;width:1440px;height:1730px;border:0;transform:scale(.333);transform-origin:0 0}
+.frame{position:relative;background:#fff;border-bottom:1px solid var(--line);max-height:620px;overflow:hidden}
+.frame img{display:block;width:100%;height:auto}
+.frame::after{content:"";position:absolute;left:0;right:0;bottom:0;height:110px;
+  background:linear-gradient(to bottom,rgba(23,26,32,0),rgba(23,26,32,.96))}
+.frame .more{position:absolute;left:0;right:0;bottom:12px;text-align:center;z-index:2;
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg2)}
 .body{padding:16px 20px 20px;font-size:14px;color:var(--fg2);flex:1}
 .body b{color:var(--fg);font-weight:600}
 .body ul{margin:10px 0 0;padding-left:17px}
@@ -45,7 +49,7 @@ h1{font-family:var(--disp);font-weight:800;font-size:clamp(40px,8vw,86px);line-h
 .note{background:var(--panel);border-left:3px solid var(--gold);padding:16px 18px;margin:0 0 30px;font-size:15px;color:var(--fg2);max-width:80ch}
 .note b{color:#fff}
 footer{padding:26px 0 60px;font-family:var(--mono);font-size:11.5px;color:var(--fg3);border-top:1px solid var(--line)}
-@media (max-width:900px){.frame{height:380px}.frame iframe{transform:scale(.26)}}
+@media (max-width:900px){.frame{max-height:440px}}
 a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 </style>
 </head>
@@ -70,7 +74,7 @@ a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
         <h2>Editorial Verdict</h2>
         <p class="sub">Consumer-testing magazine. Prüfbericht layout, scored sub-criteria, olive &amp; burnt orange.</p>
       </div>
-      <div class="frame"><iframe src="a/index.html" title="Direction A" loading="lazy" scrolling="no"></iframe></div>
+      <div class="frame"><a href="a/index.html" target="_blank" rel="noopener"><img src="a/desktop_full.png" alt="Direction A — full page" loading="lazy"></a><div class="more">full page is 6,437px — tap to open</div></div>
       <div class="body">
         <b>Strongest authority signal.</b> Reads like an independent testing institute — masthead, issue number, scored breakdown for Rezeptur / Anwendung / Preis-Leistung.
         <div class="flags">
@@ -87,7 +91,7 @@ a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
         <h2>Clinical Apothecary</h2>
         <p class="sub">European pharmacy language. Blister-strip hero drawn in SVG, Apotheke green, mono numerals.</p>
       </div>
-      <div class="frame"><iframe src="b/index.html" title="Direction B" loading="lazy" scrolling="no"></iframe></div>
+      <div class="frame"><a href="b/index.html" target="_blank" rel="noopener"><img src="b/desktop_full.png" alt="Direction B — full page" loading="lazy"></a><div class="more">full page is 7,842px — tap to open</div></div>
       <div class="body">
         <b>The most distinctive and the most defensible.</b> A six-pocket blister strip authored entirely in SVG — foil gradients, embossed lot text, perforation — carries the "6" in the name. The verdict is a calibrated measurement scale with a needle rather than stars, and pricing is framed as pharmacy pack sizes N1/N2/N3.
         <div class="flags">
@@ -106,7 +110,7 @@ a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
         <h2>Warm Momentum</h2>
         <p class="sub">Premium DTC wellness. Sunrise gradient system, ingredient-coloured cards, amber CTAs.</p>
       </div>
-      <div class="frame"><iframe src="c/index.html" title="Direction C" loading="lazy" scrolling="no"></iframe></div>
+      <div class="frame"><a href="c/index.html" target="_blank" rel="noopener"><img src="c/desktop_full.png" alt="Direction C — full page" loading="lazy"></a><div class="more">full page is 7,333px — tap to open</div></div>
       <div class="body">
         <b>Most commercial.</b> Warm sunrise palette pulled from the formula itself — sea buckthorn, amber, cayenne — with each of the seven ingredients carrying its own botanical colour. A "metabolism current" gradient runs behind the hero and through the three benefit axes.
         <div class="flags">
@@ -122,7 +126,7 @@ a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 </div>
 
 <footer><div class="wrap">
-  Previews are the real pages, scaled. Open any of them full-size to judge properly — the scaled frames flatten the typography.
+  Previews are real full-page renders at 1440px, cropped. Tap any preview to open the live page, or the Mobile link for the phone render.
 </div></footer>
 
 </body>
