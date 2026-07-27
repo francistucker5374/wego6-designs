@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WEGO6 im Test 2026 – Stoffwechsel-Kapseln im Redaktionscheck</title>
+<meta name="description" content="WEGO6 Stoffwechsel-Kapseln im Test: Rezeptur mit Apfelessig, Guarana &amp; Cayenne, Einnahme, Preise und 60-Tage-Garantie. Testurteil: 4,5 von 5.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='10' y='22' width='44' height='20' rx='10' fill='%23FFB627' transform='rotate(-24 32 32)'/%3E%3Cpath d='M22.7 15.7a10 10 0 0 1 13.6-3.7l6.3 3.5-9.8 17.7-6.3-3.5a10 10 0 0 1-3.8-13.6z' fill='%23C2410C' transform='rotate(-4 32 32)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#331B27;
+  --ink-soft:#5C4250;
+  --paper:#FFF7F0;
+  --peach:#FFE9D8;
+  --peach-deep:#FFDDC2;
+  --sun-1:#FFB627;
+  --sun-2:#FF9505;
+  --ember:#C2410C;
+  --ember-bright:#E85D04;
+  --flame:#F4700B;
+  --nettle:#2E7D4F;
+  --nettle-tint:#E9F3EB;
+  --gold-tint:#FFF1DC;
+  --dusk:#2E1B25;
+  --card:#FFFFFF;
+  --radius:26px;
+  --shadow-soft:0 10px 30px rgba(51,27,39,.08);
+  --shadow-lift:0 18px 44px rgba(194,65,12,.18);
+  --font-display:"Bricolage Grotesque",system-ui,sans-serif;
+  --font-body:"Figtree",system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{
+  font-family:var(--font-body);
+  font-size:1.0625rem;
+  line-height:1.65;
+  color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--font-display);line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+p{hyphens:auto;overflow-wrap:break-word}
+img,svg{max-width:100%;height:auto}
+a{color:var(--ember)}
+:focus-visible{outline:3px solid var(--ember);outline-offset:3px;border-radius:6px}
+.dusk :focus-visible{outline-color:var(--sun-1)}
+::selection{background:var(--sun-1);color:var(--ink)}
+
+.wrap{max-width:1160px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  min-height:56px;padding:.95rem 2rem;border-radius:999px;border:0;
+  background:linear-gradient(115deg,var(--sun-1),var(--sun-2));
+  color:var(--ink);text-decoration:none;font-weight:700;font-size:1.05rem;
+  box-shadow:0 8px 22px rgba(255,149,5,.35);
+  transition:transform .22s ease,box-shadow .22s ease;
+}
+.btn:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift)}
+.btn:active{transform:translateY(0)}
+.btn svg{flex:none}
+.btn--big{min-height:60px;padding:1.05rem 2.4rem;font-size:1.15rem}
+.btn--quiet{
+  background:transparent;box-shadow:none;color:var(--ink);
+  border:2px solid rgba(51,27,39,.25);
+}
+.btn--quiet:hover{border-color:var(--ember);color:var(--ember);box-shadow:none}
+
+/* ---------- Top bar ---------- */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  background:rgba(255,247,240,.86);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(51,27,39,.08);
+}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:68px}
+.wordmark{display:flex;align-items:baseline;gap:.55rem;font-family:var(--font-display);font-weight:800;font-size:1.35rem;letter-spacing:-.01em}
+.wordmark .six{background:linear-gradient(115deg,var(--ember-bright),var(--ember));-webkit-background-clip:text;background-clip:text;color:transparent}
+.wordmark .tag{font-family:var(--font-body);font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ember);border:1.5px solid var(--ember);border-radius:999px;padding:.18rem .55rem;transform:translateY(-2px)}
+.topbar .btn{min-height:44px;padding:.55rem 1.3rem;font-size:.95rem}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:clip;padding-block:clamp(3rem,7vw,5.5rem) clamp(2.5rem,5vw,4rem)}
+.hero::before{
+  content:"";position:absolute;inset:-20% -10% auto;height:120%;z-index:-2;
+  background:
+    radial-gradient(58% 62% at 78% 20%,rgba(255,182,39,.42),transparent 68%),
+    radial-gradient(50% 55% at 12% 82%,rgba(255,221,194,.85),transparent 70%),
+    radial-gradient(70% 80% at 50% -10%,rgba(232,93,4,.12),transparent 60%),
+    linear-gradient(180deg,#FFEEDF 0%,var(--paper) 86%);
+  animation:breathe 9s ease-in-out infinite alternate;
+  transform-origin:70% 20%;
+}
+@keyframes breathe{from{transform:scale(1);opacity:.92}to{transform:scale(1.05);opacity:1}}
+.hero-grid{display:grid;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+@media(min-width:980px){.hero-grid{grid-template-columns:1.08fr .92fr}}
+.verdict-chip{
+  display:inline-flex;align-items:center;gap:.7rem;flex-wrap:wrap;
+  background:#fff;border:1.5px solid rgba(194,65,12,.25);border-radius:999px;
+  padding:.5rem 1.1rem .5rem .8rem;box-shadow:var(--shadow-soft);
+  font-weight:700;font-size:.95rem;
+}
+.verdict-chip .stars{display:inline-flex;gap:2px}
+.verdict-chip .grade{color:var(--ember)}
+.hero h1{font-size:clamp(2.35rem,6.2vw,4.15rem);font-weight:800;margin-top:1.3rem}
+.hero h1 .glow{background:linear-gradient(115deg,var(--ember-bright),var(--ember));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{max-width:36rem;margin-top:1.35rem;font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink-soft)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem;align-items:center}
+.hero-note{display:flex;align-items:center;gap:.5rem;margin-top:1rem;font-weight:600;font-size:.95rem;color:var(--nettle)}
+.hero-note svg{flex:none}
+
+/* hero visual */
+.hero-visual{position:relative;display:grid;place-items:center;min-height:340px}
+.ribbon{position:absolute;inset:0;width:100%;height:100%;z-index:0;overflow:visible}
+.ribbon .base{fill:none;stroke:url(#flow-grad);stroke-width:12;stroke-linecap:round;opacity:.30}
+.ribbon .pulse{fill:none;stroke:url(#flow-grad);stroke-width:12;stroke-linecap:round;
+  stroke-dasharray:14 86;animation:flow 4.5s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-100}}
+.bottle{position:relative;z-index:1;width:min(64vw,300px);filter:drop-shadow(0 24px 32px rgba(51,27,39,.22))}
+
+/* ---------- Fact band ---------- */
+.facts{position:relative;z-index:2}
+.facts ul{
+  list-style:none;display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;
+  background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-soft);
+  padding:1.1rem 1.3rem;border:1px solid rgba(51,27,39,.06);
+}
+.facts li{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.95rem;padding:.35rem .5rem}
+.facts li svg{flex:none}
+
+/* ---------- Sections ---------- */
+.section{padding-block:clamp(3.5rem,8vw,6.5rem)}
+.eyebrow{
+  display:inline-block;font-weight:700;font-size:.78rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ember);margin-bottom:1rem;
+}
+.section h2{font-size:clamp(1.85rem,4vw,2.9rem);font-weight:800;max-width:22ch}
+.section .intro{max-width:44rem;margin-top:1.1rem;color:var(--ink-soft);font-size:1.08rem}
+
+/* Was ist */
+.was-grid{display:grid;gap:2.2rem;margin-top:2.5rem}
+@media(min-width:920px){.was-grid{grid-template-columns:1.15fr .85fr;align-items:start}}
+.was-copy p+p{margin-top:1.1rem}
+.scorecard{
+  background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-soft);
+  border:1px solid rgba(51,27,39,.06);padding:1.8rem;
+}
+.scorecard h3{font-size:1.25rem;display:flex;align-items:center;gap:.6rem}
+.score-total{display:flex;align-items:baseline;gap:.6rem;margin-top:1rem}
+.score-total strong{font-family:var(--font-display);font-weight:800;font-size:2.6rem;line-height:1;background:linear-gradient(115deg,var(--ember-bright),var(--ember));-webkit-background-clip:text;background-clip:text;color:transparent}
+.score-total span{font-weight:700;color:var(--ink-soft)}
+.meter{margin-top:1.2rem}
+.meter dt{display:flex;justify-content:space-between;font-weight:600;font-size:.95rem}
+.meter dd{margin-top:.4rem}
+.meter .bar{height:10px;border-radius:999px;background:var(--peach)}
+.meter .bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--sun-1),var(--ember-bright))}
+.scorecard .btn{width:100%;margin-top:1.6rem}
+
+/* Wirkung */
+.wirkung{position:relative}
+.flowline{display:block;width:100%;height:64px;margin:2.2rem 0 -1rem;overflow:visible}
+.flowline .base{fill:none;stroke:url(#flow-grad-2);stroke-width:7;stroke-linecap:round;opacity:.3}
+.flowline .pulse{fill:none;stroke:url(#flow-grad-2);stroke-width:7;stroke-linecap:round;stroke-dasharray:10 90;animation:flow 5s linear infinite}
+.pillars{display:grid;gap:1.4rem;margin-top:2rem}
+@media(min-width:760px){.pillars{grid-template-columns:repeat(3,1fr)}}
+.pillar{
+  background:#fff;border-radius:var(--radius);padding:1.9rem 1.7rem;
+  box-shadow:var(--shadow-soft);border:1px solid rgba(51,27,39,.06);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.pillar:hover{transform:translateY(-5px);box-shadow:var(--shadow-lift)}
+.pillar .icon{
+  width:58px;height:58px;border-radius:18px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--sun-1),var(--sun-2));margin-bottom:1.2rem;
+}
+.pillar h3{font-size:1.3rem;margin-bottom:.6rem}
+.pillar p{color:var(--ink-soft);font-size:1rem}
+
+/* Ingredients */
+.inhalt{background:linear-gradient(180deg,var(--paper),#FFF2E6 60%,var(--paper))}
+.lead-card{
+  margin-top:2.4rem;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-soft);
+  border:1px solid rgba(51,27,39,.06);border-top:6px solid #D9A441;
+  padding:2rem 1.8rem;display:grid;gap:1.4rem;
+}
+@media(min-width:860px){.lead-card{grid-template-columns:auto 1fr;align-items:center;padding:2.2rem 2.4rem}}
+.lead-card .swatch-big{width:74px;height:74px;border-radius:24px;background:radial-gradient(circle at 30% 30%,#F0C878,#D9A441)}
+.zutat-tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ember);background:var(--peach);border-radius:999px;padding:.3rem .8rem;margin-bottom:.5rem}
+.lead-card h3{font-size:1.5rem}
+.lead-card p{color:var(--ink-soft);margin-top:.5rem;max-width:56rem}
+.zutaten{list-style:none;display:grid;gap:1.3rem;margin-top:1.3rem}
+@media(min-width:640px){.zutaten{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.zutaten{grid-template-columns:repeat(3,1fr)}}
+.zutat{
+  background:#fff;border-radius:22px;padding:1.5rem;box-shadow:var(--shadow-soft);
+  border:1px solid rgba(51,27,39,.06);border-top:6px solid var(--zc,var(--sun-2));
+}
+.zutat .swatch{width:44px;height:44px;border-radius:14px;background:radial-gradient(circle at 30% 30%,var(--zc-hi,var(--sun-1)),var(--zc,var(--sun-2)));margin-bottom:1rem}
+.zutat h3{font-size:1.12rem;margin-bottom:.35rem}
+.zutat p{font-size:.95rem;color:var(--ink-soft)}
+
+/* Einnahme */
+.steps{counter-reset:step;list-style:none;display:grid;gap:1.4rem;margin-top:2.4rem}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.steps li{
+  counter-increment:step;position:relative;background:#fff;border-radius:var(--radius);
+  padding:2.4rem 1.7rem 1.8rem;box-shadow:var(--shadow-soft);border:1px solid rgba(51,27,39,.06);
+}
+.steps li::before{
+  content:counter(step);position:absolute;top:-1.1rem;left:1.5rem;
+  width:2.6rem;height:2.6rem;border-radius:999px;display:grid;place-items:center;
+  font-family:var(--font-display);font-weight:800;font-size:1.15rem;color:var(--ink);
+  background:linear-gradient(135deg,var(--sun-1),var(--sun-2));
+  box-shadow:0 6px 14px rgba(255,149,5,.4);
+}
+.steps h3{font-size:1.2rem;margin-bottom:.5rem}
+.steps p{color:var(--ink-soft);font-size:1rem}
+.einnahme-chips{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}
+.einnahme-chips span{display:inline-flex;align-items:center;gap:.45rem;background:var(--nettle-tint);color:var(--nettle);font-weight:700;font-size:.9rem;border-radius:999px;padding:.5rem 1rem}
+
+/* Preise */
+.preise{background:linear-gradient(180deg,var(--paper) 0%,var(--gold-tint) 22%,var(--gold-tint) 82%,var(--paper) 100%)}
+.plans{display:grid;gap:1.5rem;margin-top:2.6rem;align-items:stretch}
+@media(min-width:880px){.plans{grid-template-columns:repeat(3,1fr)}}
+.plan{
+  position:relative;background:#fff;border-radius:var(--radius);padding:2.1rem 1.8rem 1.9rem;
+  box-shadow:var(--shadow-soft);border:1.5px solid rgba(51,27,39,.08);
+  display:flex;flex-direction:column;
+}
+.plan .dauer{font-weight:700;font-size:1.05rem}
+.plan .menge{color:var(--ink-soft);font-size:.92rem;margin-top:.15rem}
+.plan .preis{font-family:var(--font-display);font-weight:800;font-size:2.5rem;line-height:1.05;margin-top:1.1rem}
+.plan .preis small{font-family:var(--font-body);font-weight:600;font-size:.95rem;color:var(--ink-soft)}
+.plan .pm{margin-top:.35rem;font-weight:600;color:var(--ink-soft);font-size:.95rem}
+.plan ul{list-style:none;margin:1.3rem 0 1.6rem;display:grid;gap:.55rem}
+.plan li{display:flex;gap:.55rem;align-items:flex-start;font-size:.95rem}
+.plan li svg{flex:none;margin-top:.22rem}
+.plan .btn{margin-top:auto;width:100%}
+.plan--best{
+  border:2.5px solid transparent;
+  background:
+    linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(135deg,var(--sun-1),var(--ember-bright)) border-box;
+  box-shadow:var(--shadow-lift);
+}
+@media(min-width:880px){.plan--best{transform:scale(1.045)}}
+.plan--best .badge{
+  position:absolute;top:-1rem;left:50%;transform:translateX(-50%);white-space:nowrap;
+  background:linear-gradient(115deg,var(--ember-bright),var(--ember));color:#FFF7F0;
+  font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;
+  border-radius:999px;padding:.42rem 1.1rem;box-shadow:0 8px 18px rgba(194,65,12,.35);
+}
+.plan--best .pm strong{color:var(--ember)}
+.spartext{color:var(--nettle);font-weight:700;font-size:.95rem;margin-top:.3rem}
+
+.garantie{
+  margin-top:2.6rem;background:var(--nettle-tint);border:1.5px solid rgba(46,125,79,.25);
+  border-radius:var(--radius);padding:1.8rem;display:grid;gap:1.2rem;
+}
+@media(min-width:760px){.garantie{grid-template-columns:auto 1fr;align-items:center;padding:1.9rem 2.3rem}}
+.garantie .shield{width:64px;height:64px;border-radius:20px;background:var(--nettle);display:grid;place-items:center}
+.garantie h3{font-size:1.35rem;color:#1F5A38}
+.garantie p{color:#2C5E42;margin-top:.35rem;font-size:1rem;max-width:62rem}
+
+/* FAQ */
+.faq-list{margin-top:2.4rem;display:grid;gap:.9rem;max-width:820px}
+.faq-list details{
+  background:#fff;border-radius:20px;border:1px solid rgba(51,27,39,.08);
+  box-shadow:var(--shadow-soft);overflow:clip;
+}
+.faq-list summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1.15rem 1.4rem;min-height:56px;font-weight:700;font-size:1.05rem;
+}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary .chev{flex:none;transition:transform .25s ease;color:var(--ember)}
+.faq-list details[open] summary .chev{transform:rotate(180deg)}
+.faq-list .antwort{padding:0 1.4rem 1.3rem;color:var(--ink-soft)}
+.faq-list summary:hover{color:var(--ember)}
+
+/* Closing */
+.closing{
+  position:relative;overflow:clip;color:#FFF1E6;text-align:center;
+  background:var(--dusk);
+  padding-block:clamp(4rem,9vw,7rem);
+}
+.closing::before{
+  content:"";position:absolute;left:50%;bottom:-42%;transform:translateX(-50%);
+  width:130vw;max-width:1700px;aspect-ratio:2/1;border-radius:50% 50% 0 0/100% 100% 0 0;
+  background:radial-gradient(closest-side at 50% 100%,rgba(232,93,4,.55),rgba(255,182,39,.22) 55%,transparent 78%);
+  animation:breathe 10s ease-in-out infinite alternate;z-index:0;
+}
+.closing .wrap{position:relative;z-index:1}
+.closing .eyebrow{color:var(--sun-1)}
+.closing h2{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;max-width:20ch;margin-inline:auto}
+.closing h2 .glow{background:linear-gradient(115deg,var(--sun-1),var(--ember-bright));-webkit-background-clip:text;background-clip:text;color:transparent}
+.closing p{max-width:38rem;margin:1.2rem auto 0;color:rgba(255,241,230,.85)}
+.closing .btn{margin-top:2.2rem}
+.closing .mini{display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:center;margin-top:1.6rem;font-size:.95rem;font-weight:600;color:rgba(255,241,230,.9)}
+.closing .mini span{display:inline-flex;align-items:center;gap:.45rem}
+
+/* Footer */
+footer{background:var(--dusk);color:rgba(255,241,230,.55);text-align:center;font-size:.85rem;padding:1.6rem 1.25rem 2rem;border-top:1px solid rgba(255,241,230,.12)}
+
+/* Wave divider */
+.wave{display:block;width:100%;height:56px;color:#FFF2E6}
+.wave--gold{color:var(--gold-tint)}
+
+/* Reveal (JS-armed only) */
+html.reveal-armed [data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+html.reveal-armed [data-reveal].in{opacity:1;transform:none}
+
+@media print{
+  html.reveal-armed [data-reveal]{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .ribbon .pulse,.flowline .pulse{display:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <linearGradient id="flow-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB627"/>
+      <stop offset="55%" stop-color="#F4700B"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+    <linearGradient id="flow-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB627"/>
+      <stop offset="50%" stop-color="#F4700B"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <span class="wordmark">WEGO<span class="six">6</span> <span class="tag">Testbericht</span></span>
+    <a class="btn" href="/de/go/">Zum Angebot
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="verdict-chip" aria-label="Testurteil: 4,5 von 5 Punkten – sehr gut">
+        <span class="stars" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF9505" stroke="#C2410C" stroke-width="1.2"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF9505" stroke="#C2410C" stroke-width="1.2"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF9505" stroke="#C2410C" stroke-width="1.2"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF9505" stroke="#C2410C" stroke-width="1.2"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="halbstern"><stop offset="50%" stop-color="#FF9505"/><stop offset="50%" stop-color="#FFE9D8"/></linearGradient></defs><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z" fill="url(#halbstern)" stroke="#C2410C" stroke-width="1.2"/></svg>
+        </span>
+        <span class="grade">4,5&thinsp;/&thinsp;5</span>
+        <span>Testurteil: Sehr gut</span>
+      </p>
+      <h1>WEGO6 im Test: die Kapsel, die den <span class="glow">Stoffwechsel</span> in Schwung bringt</h1>
+      <p class="lead">387&nbsp;mg fein abgestimmte Pflanzenkraft in einer einzigen veganen Kapsel pro Tag: Apfelessig, Guarana und Cayennepfeffer feuern den Energieumsatz an – Löwenzahn, Brennnessel, Sanddorn und Zink halten Appetit und Energie im Gleichgewicht.</p>
+      <div class="hero-cta">
+        <a class="btn btn--big" href="/de/go/">Zum besten Angebot
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--quiet" href="/de/go/">Preise ansehen</a>
+      </div>
+      <p class="hero-note">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.8l7 3v5.4c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V5.8l7-3z" stroke="#2E7D4F" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.8 12l2.2 2.2 4.2-4.4" stroke="#2E7D4F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        60 Tage Geld-zurück-Garantie auf jede Bestellung
+      </p>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <svg class="ribbon" viewBox="0 0 520 560" preserveAspectRatio="xMidYMid meet">
+        <path class="base" d="M-30 480 C 120 560, 300 460, 260 330 C 225 215, 130 190, 175 105 C 210 40, 380 30, 560 95"/>
+        <path class="pulse" pathLength="100" d="M-30 480 C 120 560, 300 460, 260 330 C 225 215, 130 190, 175 105 C 210 40, 380 30, 560 95"/>
+      </svg>
+      <svg class="bottle" viewBox="0 0 300 400" role="img" aria-label="WEGO6 Kapseldose">
+        <defs>
+          <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#FFF3E4"/>
+            <stop offset="45%" stop-color="#FFFDFA"/>
+            <stop offset="100%" stop-color="#FBE4CB"/>
+          </linearGradient>
+          <linearGradient id="cap" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#4A2C3B"/>
+            <stop offset="50%" stop-color="#331B27"/>
+            <stop offset="100%" stop-color="#241119"/>
+          </linearGradient>
+          <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#FFB627"/>
+            <stop offset="100%" stop-color="#E85D04"/>
+          </linearGradient>
+        </defs>
+        <ellipse cx="150" cy="378" rx="112" ry="14" fill="#331B27" opacity=".14"/>
+        <rect x="62" y="26" width="176" height="58" rx="16" fill="url(#cap)"/>
+        <rect x="70" y="80" width="160" height="14" fill="#241119"/>
+        <rect x="42" y="90" width="216" height="286" rx="30" fill="url(#glass)"/>
+        <rect x="42" y="90" width="216" height="286" rx="30" fill="none" stroke="#E8CBAF" stroke-width="2"/>
+        <rect x="56" y="128" width="188" height="196" rx="18" fill="#FFF9F2" stroke="#F0DAC4" stroke-width="1.5"/>
+        <rect x="56" y="128" width="188" height="10" rx="5" fill="url(#band)"/>
+        <text x="150" y="188" text-anchor="middle" style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:44px;letter-spacing:-1px" fill="#331B27">WEGO<tspan fill="#E85D04">6</tspan></text>
+        <text x="150" y="216" text-anchor="middle" style="font-family:'Figtree',sans-serif;font-weight:700;font-size:14.5px;letter-spacing:3.5px" fill="#C2410C">STOFFWECHSEL</text>
+        <line x1="86" y1="236" x2="214" y2="236" stroke="#F0DAC4" stroke-width="1.5"/>
+        <text x="150" y="262" text-anchor="middle" style="font-family:'Figtree',sans-serif;font-weight:600;font-size:14px" fill="#5C4250">387 mg &#183; 1 Kapsel pro Tag</text>
+        <text x="150" y="286" text-anchor="middle" style="font-family:'Figtree',sans-serif;font-weight:600;font-size:14px" fill="#2E7D4F">100 % vegan</text>
+        <g transform="translate(129 300)">
+          <rect x="0" y="0" width="42" height="17" rx="8.5" fill="#FFE9D8" stroke="#E8CBAF"/>
+          <path d="M8.5 0h12.5v17H8.5A8.5 8.5 0 0 1 0 8.5 8.5 8.5 0 0 1 8.5 0z" fill="#F4700B"/>
+        </g>
+        <g transform="rotate(-24 268 330)">
+          <rect x="238" y="318" width="58" height="24" rx="12" fill="#FFE9D8" stroke="#E8CBAF"/>
+          <path d="M250 318h17v24h-17a12 12 0 0 1-12-12 12 12 0 0 1 12-12z" fill="#F4700B"/>
+          <line x1="252" y1="322" x2="252" y2="338" stroke="#FFF7F0" stroke-width="2" opacity=".7"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="wrap facts" data-reveal>
+    <ul>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="8.5" width="18" height="8" rx="4" stroke="#C2410C" stroke-width="1.8"/><path d="M12 8.5v8" stroke="#C2410C" stroke-width="1.8"/></svg>387 mg pro Kapsel</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="#C2410C" stroke-width="1.8"/><path d="M12 7.5V12l3 2.5" stroke="#C2410C" stroke-width="1.8" stroke-linecap="round"/></svg>1 Kapsel täglich</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19c0-7 4-12.5 14-14-1 9.5-5.5 14-11 14-1 0-2-.2-3-.6" stroke="#2E7D4F" stroke-width="1.8" stroke-linejoin="round"/><path d="M5 19c2-4.5 5-8 9-10.5" stroke="#2E7D4F" stroke-width="1.8" stroke-linecap="round"/></svg>100 % vegan</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3.2" stroke="#C2410C" stroke-width="1.8"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.9 5.9l2 2M16.1 16.1l2 2M18.1 5.9l-2 2M7.9 16.1l-2 2" stroke="#C2410C" stroke-width="1.8" stroke-linecap="round"/></svg>7 aktive Inhaltsstoffe</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.8l7 3v5.4c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V5.8l7-3z" stroke="#2E7D4F" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.8 12l2.2 2.2 4.2-4.4" stroke="#2E7D4F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>60 Tage Garantie</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ WAS IST ============ -->
+<section class="section" id="was">
+  <div class="wrap">
+    <span class="eyebrow">Der Redaktionscheck</span>
+    <h2>Was ist WEGO6 – und warum überzeugt es im Test?</h2>
+    <div class="was-grid">
+      <div class="was-copy" data-reveal>
+        <p>WEGO6 ist eine vegane Stoffwechsel-Kapsel, die sieben bewährte Pflanzen- und Mikronährstoffe in einer einzigen Tagesdosis von 387&nbsp;mg bündelt. Statt auf ein Dutzend halbherziger Zusätze setzt die Rezeptur auf eine klare Idee: den Stoffwechsel anregen, gleichmäßige Energie liefern und den Appetit auf natürliche Weise ins Gleichgewicht bringen.</p>
+        <p>Genau diese Konzentration aufs Wesentliche hat uns im Test gefallen. Apfelessigpulver und Cayennepfeffer bilden den warmen Kern, Guarana sorgt für sanfte, lang anhaltende Energie, während Löwenzahnwurzel, Brennnesselblatt, Sanddorn-Extrakt und Zink die Rezeptur abrunden. Alles vollständig deklariert, ohne Gelatine und ohne unnötige Füllstoffe.</p>
+        <p>Dazu kommt eine Einnahme, die einfacher kaum sein könnte – eine Kapsel am Morgen, fertig – und eine 60-tägige Geld-zurück-Garantie, die dem Ganzen das Risiko nimmt. Unterm Strich: eine der durchdachtesten Stoffwechsel-Formeln, die wir in dieser Preisklasse gesehen haben.</p>
+      </div>
+      <aside class="scorecard" data-reveal aria-label="Bewertung der Redaktion">
+        <h3>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF9505" stroke="#C2410C" stroke-width="1.2" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          Unser Testurteil
+        </h3>
+        <p class="score-total"><strong>4,5</strong> <span>von 5 – Sehr gut</span></p>
+        <dl>
+          <div class="meter">
+            <dt>Rezeptur &amp; Transparenz <span>4,5</span></dt>
+            <dd><div class="bar" role="img" aria-label="Rezeptur und Transparenz: 4,5 von 5"><i style="width:90%"></i></div></dd>
+          </div>
+          <div class="meter">
+            <dt>Alltagstauglichkeit <span>5,0</span></dt>
+            <dd><div class="bar" role="img" aria-label="Alltagstauglichkeit: 5 von 5"><i style="width:100%"></i></div></dd>
+          </div>
+          <div class="meter">
+            <dt>Preis-Leistung <span>4,5</span></dt>
+            <dd><div class="bar" role="img" aria-label="Preis-Leistung: 4,5 von 5"><i style="width:90%"></i></div></dd>
+          </div>
+          <div class="meter">
+            <dt>Garantie &amp; Service <span>4,5</span></dt>
+            <dd><div class="bar" role="img" aria-label="Garantie und Service: 4,5 von 5"><i style="width:90%"></i></div></dd>
+          </div>
+        </dl>
+        <a class="btn" href="/de/go/">Selbst überzeugen
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WIRKUNG ============ -->
+<section class="section wirkung" id="wirkung">
+  <div class="wrap">
+    <span class="eyebrow">So wirkt WEGO6</span>
+    <h2>Drei Wirkachsen, ein Rhythmus</h2>
+    <p class="intro">Die Rezeptur folgt dem natürlichen Verlauf eines guten Tages: morgens anstoßen, tagsüber tragen, zwischendurch im Gleichgewicht bleiben.</p>
+
+    <svg class="flowline" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true">
+      <path class="base" d="M0 46 C 200 10, 400 58, 600 32 C 800 6, 1000 54, 1200 22"/>
+      <path class="pulse" pathLength="100" d="M0 46 C 200 10, 400 58, 600 32 C 800 6, 1000 54, 1200 22"/>
+    </svg>
+
+    <div class="pillars">
+      <article class="pillar" data-reveal>
+        <div class="icon" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2.5c1 3-3.5 4.5-3.5 8a3.5 3.5 0 0 0 7 0c0-1.2-.5-2.2-1-3.1 2.8 1.3 4.5 3.9 4.5 7.1a7 7 0 1 1-14 0c0-5.5 4.5-7.5 7-12z" stroke="#331B27" stroke-width="1.9" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Stoffwechsel anfeuern</h3>
+        <p>Apfelessigpulver, Cayennepfeffer und Guarana bilden den warmen Kern der Formel: Sie unterstützen den Energieumsatz und helfen dem Körper, vorhandene Reserven aktiver zu nutzen – Tag für Tag.</p>
+      </article>
+      <article class="pillar" data-reveal>
+        <div class="icon" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M4 17.5h16M6.5 17.5a5.5 5.5 0 1 1 11 0" stroke="#331B27" stroke-width="1.9" stroke-linecap="round"/><path d="M12 5.5V8M5 9l1.8 1.8M19 9l-1.8 1.8" stroke="#331B27" stroke-width="1.9" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Energie, die trägt</h3>
+        <p>Natürliches Koffein aus Guarana wird langsamer freigesetzt als das aus Kaffee – für gleichmäßigen Antrieb ohne Nachmittagstief. Sanddorn-Extrakt steuert wertvolles Vitamin&nbsp;C bei, Zink unterstützt den normalen Nährstoff-Stoffwechsel.</p>
+      </article>
+      <article class="pillar" data-reveal>
+        <div class="icon" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 4v16M12 4l6.5 2M12 4 5.5 6" stroke="#331B27" stroke-width="1.9" stroke-linecap="round"/><path d="M5.5 6 3 12a2.9 2.9 0 0 0 5 0L5.5 6zM18.5 6 16 12a2.9 2.9 0 0 0 5 0l-2.5-6z" stroke="#331B27" stroke-width="1.9" stroke-linejoin="round"/><path d="M8.5 20h7" stroke="#331B27" stroke-width="1.9" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Appetit in Balance</h3>
+        <p>Apfelessig und die Bitterstoffe der Löwenzahnwurzel fördern ein angenehmes Sättigungsgefühl, Brennnesselblatt rundet ab. Heißhunger verliert seinen Schrecken – ganz ohne Verzichtsgefühl.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INHALTSSTOFFE ============ -->
+<section class="section inhalt" id="inhaltsstoffe">
+  <div class="wrap">
+    <span class="eyebrow">Die Rezeptur</span>
+    <h2>Sieben Wirkstoffe, sieben Farben der Natur</h2>
+    <p class="intro">Jede Kapsel bündelt 387&nbsp;mg aus sieben klar deklarierten Zutaten – vegan, ohne Gelatine, ohne versteckte Füllstoffe.</p>
+
+    <div class="lead-card" data-reveal>
+      <div class="swatch-big" aria-hidden="true"></div>
+      <div>
+        <span class="zutat-tag">Leitwirkstoff</span>
+        <h3>Apfelessigpulver</h3>
+        <p>Der goldene Klassiker der Stoffwechselküche – in Kapselform ganz ohne den scharfen Geschmack. Apfelessig ist der Ankerpunkt der Rezeptur: Er unterstützt den Energiestoffwechsel und ein natürliches Sättigungsgefühl und macht WEGO6 damit zur eleganten Alternative zum morgendlichen Essig-Ritual.</p>
+      </div>
+    </div>
+
+    <ul class="zutaten">
+      <li class="zutat" style="--zc:#8C3B2E;--zc-hi:#B85C4A" data-reveal>
+        <div class="swatch" aria-hidden="true"></div>
+        <h3>Guarana-Extrakt</h3>
+        <p>Die Koffeinquelle aus dem Amazonas: wird langsam freigesetzt und trägt gleichmäßig durch den Tag – spürbar sanfter als Kaffee.</p>
+      </li>
+      <li class="zutat" style="--zc:#E0A81C;--zc-hi:#F2C94C" data-reveal>
+        <div class="swatch" aria-hidden="true"></div>
+        <h3>Löwenzahnwurzel</h3>
+        <p>Traditionsreiche Bitterstoffe, die die Verdauung ankurbeln und dem Sättigungsgefühl auf die Sprünge helfen.</p>
+      </li>
+      <li class="zutat" style="--zc:#2E7D4F;--zc-hi:#5CA97C" data-reveal>
+        <div class="swatch" aria-hidden="true"></div>
+        <h3>Brennnesselblatt</h3>
+        <p>Mineralstoffreiches Blattgrün, das den Körper bei der natürlichen Entwässerung unterstützt und die Formel erdet.</p>
+      </li>
+      <li class="zutat" style="--zc:#C22B1E;--zc-hi:#E8574A" data-reveal>
+        <div class="swatch" aria-hidden="true"></div>
+        <h3>Cayennepfeffer</h3>
+        <p>Capsaicin bringt Wärme in den Energieumsatz – der feurige Taktgeber der Rezeptur, präzise dosiert statt scharf.</p>
+      </li>
+      <li class="zutat" style="--zc:#F4700B;--zc-hi:#FFA24D" data-reveal>
+        <div class="swatch" aria-hidden="true"></div>
+        <h3>Sanddorn-Extrakt</h3>
+        <p>Die orange Vitamin-C-Beere des Nordens: unterstützt Immunsystem und Frische – der Sonnenschein unter den Zutaten.</p>
+      </li>
+      <li class="zutat" style="--zc:#7B8794;--zc-hi:#A8B3BF" data-reveal>
+        <div class="swatch" aria-hidden="true"></div>
+        <h3>Zink</h3>
+        <p>Das essenzielle Spurenelement trägt zu einem normalen Stoffwechsel von Kohlenhydraten und Fettsäuren bei – das solide Fundament der Formel.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ EINNAHME ============ -->
+<section class="section" id="einnahme">
+  <div class="wrap">
+    <span class="eyebrow">Die Einnahme</span>
+    <h2>Ein guter Morgen in drei Schritten</h2>
+    <ol class="steps">
+      <li data-reveal>
+        <h3>Morgens eine Kapsel</h3>
+        <p>Nehmen Sie täglich eine Kapsel WEGO6 – idealerweise direkt nach dem Aufstehen, vor dem Frühstück. Mehr braucht es nicht.</p>
+      </li>
+      <li data-reveal>
+        <h3>Mit Wasser einnehmen</h3>
+        <p>Ein großes Glas Wasser dazu, und die 387&nbsp;mg Pflanzenkraft starten in den Tag – ganz ohne Essiggeschmack oder Pulveranrühren.</p>
+      </li>
+      <li data-reveal>
+        <h3>Täglich dranbleiben</h3>
+        <p>Ein Stoffwechsel liebt Routine. Wer WEGO6 über zwei bis drei Monate konsequent einnimmt, holt das volle Potenzial aus der Rezeptur.</p>
+      </li>
+    </ol>
+    <div class="einnahme-chips">
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>100 % vegan</span>
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Ohne Gelatine</span>
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Nur 1 Kapsel pro Tag</span>
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Passt in jede Morgenroutine</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREISE ============ -->
+<section class="section preise" id="preise">
+  <div class="wrap">
+    <span class="eyebrow">Pakete &amp; Preise</span>
+    <h2>Der Vorrat, der zur Routine passt</h2>
+    <p class="intro">Ein Stoffwechsel braucht Anlauf – deshalb lohnt sich der größere Vorrat gleich doppelt: bessere Routine, besserer Monatspreis.</p>
+
+    <div class="plans">
+      <article class="plan" data-reveal>
+        <p class="dauer">1 Monat</p>
+        <p class="menge">Vorrat für 30 Tage zum Kennenlernen</p>
+        <p class="preis">54,90&nbsp;€</p>
+        <p class="pm">54,90&nbsp;€ pro Monat</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="#2E7D4F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>30 vegane Kapseln</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="#2E7D4F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>60 Tage Geld-zurück-Garantie</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="#2E7D4F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Ideal zum Ausprobieren</li>
+        </ul>
+        <a class="btn btn--quiet" href="/de/go/">Paket wählen</a>
+      </article>
+
+      <article class="plan" data-reveal>
+        <p class="dauer">2 Monate</p>
+        <p class="menge">Vorrat für 60 Tage</p>
+        <p class="preis">79,95&nbsp;€</p>
+        <p class="pm">nur 39,98&nbsp;€ pro Monat</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="#2E7D4F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>60 vegane Kapseln</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="#2E7D4F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>60 Tage Geld-zurück-Garantie</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="#2E7D4F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>29,85&nbsp;€ günstiger als zwei Einzelpakete</li>
+        </ul>
+        <a class="btn btn--quiet" href="/de/go/">Paket wählen</a>
+      </article>
+
+      <article class="plan plan--best" data-reveal>
+        <p class="badge">Preis-Tipp der Redaktion</p>
+        <p class="dauer">3 Monate</p>
+        <p class="menge">Vorrat für die volle Stoffwechsel-Kur</p>
+        <p class="preis">109,95&nbsp;€</p>
+        <p class="pm">nur <strong>36,65&nbsp;€ pro Monat</strong></p>
+        <p class="spartext">54,75&nbsp;€ günstiger als drei Einzelpakete</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="#2E7D4F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>90 vegane Kapseln</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="#2E7D4F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>60 Tage Geld-zurück-Garantie</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke="#2E7D4F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Die volle Kur-Länge, die wir im Test empfehlen</li>
+        </ul>
+        <a class="btn" href="/de/go/">Bestes Paket wählen
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+    </div>
+
+    <div class="garantie" data-reveal>
+      <div class="shield" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M12 2.8l7 3v5.4c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V5.8l7-3z" stroke="#FFF7F0" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.8 12l2.2 2.2 4.2-4.4" stroke="#FFF7F0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <h3>60 Tage Geld-zurück-Garantie</h3>
+        <p>Jedes Paket ist durch eine volle 60-Tage-Garantie abgesichert: zwei Monate Zeit, WEGO6 im eigenen Alltag zu erleben. Wer nicht überzeugt ist, erhält den Kaufpreis zurück – unkompliziert und ohne Wenn und Aber.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <span class="eyebrow">Häufige Fragen</span>
+    <h2>Alles Wichtige zu WEGO6 auf einen Blick</h2>
+    <div class="faq-list">
+      <details data-reveal>
+        <summary>Ist WEGO6 seriös?
+          <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p class="antwort">Ja. Die Rezeptur ist vollständig deklariert – alle sieben Inhaltsstoffe samt Gesamtdosierung von 387&nbsp;mg stehen offen auf dem Etikett. Dazu kommen eine 60-tägige Geld-zurück-Garantie und ein erreichbarer Kundenservice. In unserem Test hat der Anbieter durchweg einen professionellen und transparenten Eindruck hinterlassen.</p>
+      </details>
+      <details data-reveal>
+        <summary>Welche Erfahrungen gibt es mit WEGO6?
+          <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p class="antwort">In unserem Redaktionstest überzeugte WEGO6 vor allem durch die unkomplizierte Einnahme und die gleichmäßige Energie über den Tag. Wichtig ist Geduld: Ein Stoffwechsel stellt sich nicht über Nacht um. Wer die Kapseln täglich über mehrere Wochen einnimmt und mit Bewegung und ausgewogener Ernährung kombiniert, holt das Beste aus der Rezeptur heraus.</p>
+      </details>
+      <details data-reveal>
+        <summary>Wie nehme ich WEGO6 richtig ein?
+          <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p class="antwort">Eine Kapsel täglich, am besten morgens vor dem Frühstück mit einem großen Glas Wasser. Mehr ist nicht nötig – die volle Tagesdosis von 387&nbsp;mg steckt in einer einzigen Kapsel. Für das beste Ergebnis empfehlen wir eine durchgehende Einnahme über zwei bis drei Monate.</p>
+      </details>
+      <details data-reveal>
+        <summary>Was steckt in den Kapseln?
+          <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p class="antwort">Sieben aufeinander abgestimmte Zutaten: Apfelessigpulver, Guarana-Extrakt, Löwenzahnwurzel, Brennnesselblatt, Cayennepfeffer, Sanddorn-Extrakt und Zink. Die Kapselhülle ist rein pflanzlich – WEGO6 ist zu 100&nbsp;% vegan und kommt ohne Gelatine und ohne unnötige Füllstoffe aus.</p>
+      </details>
+      <details data-reveal>
+        <summary>Wie schnell wird geliefert?
+          <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p class="antwort">Die Bestellung wird direkt nach Zahlungseingang bearbeitet und in der Regel innerhalb weniger Werktage zugestellt. Der Versand erfolgt mit Sendungsverfolgung, sodass Sie Ihr Paket jederzeit im Blick behalten.</p>
+      </details>
+      <details data-reveal>
+        <summary>Wie funktioniert die Geld-zurück-Garantie?
+          <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p class="antwort">Ganz einfach: Sie haben ab Erhalt 60 Tage Zeit, WEGO6 in Ruhe zu testen. Sollten Sie nicht zufrieden sein, genügt eine kurze Nachricht an den Kundenservice – Sie erhalten den Kaufpreis zurück, ohne dass Sie eine Begründung liefern müssen.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing dusk">
+  <div class="wrap">
+    <span class="eyebrow">Unser Fazit</span>
+    <h2>Bereit für einen Stoffwechsel mit <span class="glow">Rückenwind</span>?</h2>
+    <p>Eine Kapsel am Morgen, sieben Wirkstoffe, 60 Tage Garantie: WEGO6 macht es leicht, anzufangen – und noch leichter, dranzubleiben. Unser Testurteil: 4,5 von 5.</p>
+    <a class="btn btn--big" href="/de/go/">Jetzt WEGO6 sichern
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <div class="mini">
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.8l7 3v5.4c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V5.8l7-3z" stroke="#FFB627" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.8 12l2.2 2.2 4.2-4.4" stroke="#FFB627" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>60 Tage Geld-zurück-Garantie</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19c0-7 4-12.5 14-14-1 9.5-5.5 14-11 14-1 0-2-.2-3-.6" stroke="#FFB627" stroke-width="1.8" stroke-linejoin="round"/></svg>100 % vegan</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="#FFB627" stroke-width="1.8"/><path d="M12 7.5V12l3 2.5" stroke="#FFB627" stroke-width="1.8" stroke-linecap="round"/></svg>Nur 1 Kapsel pro Tag</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 WEGO6 Testbericht · Redaktionell geprüft im Juli 2026 · Alle Preise inkl. MwSt.</p>
+</footer>
+
+<script>
+(function(){
+  var motionOk = window.matchMedia && matchMedia("(prefers-reduced-motion: no-preference)").matches;
+  if(!motionOk || !("IntersectionObserver" in window)) return;
+  document.documentElement.classList.add("reveal-armed");
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+    });
+  },{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll("[data-reveal]").forEach(function(el){ io.observe(el); });
+})();
+</script>
+
+</body>
+</html>
